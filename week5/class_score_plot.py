@@ -16,7 +16,6 @@ if __name__ == '__main__':
     # TODO) Prepare midterm, final, and total scores
     midterm_kr, final_kr = zip(*class_kr)
     total_kr = [40/125*midterm + 60/100*final for (midterm, final) in class_kr]
-    print(total_kr)
     midterm_en, final_en = zip(*class_en)
     total_en = [40/125*midterm + 60/100*final for (midterm, final) in class_en]
 
