@@ -22,8 +22,8 @@ if __name__ == '__main__':
     # TODO) Plot midterm/final scores as points
     plt.figure(figsize=(8, 10))
     plt.subplot(2, 1, 1)
-    plt.scatter(midterm_kr, final_kr, marker='o', color='red', label='Data points')
-    plt.scatter(midterm_en, final_en, marker='+', color='blue', label='Data points')
+    plt.scatter(midterm_kr, final_kr, marker='o', color='red', label='Korean')
+    plt.scatter(midterm_en, final_en, marker='+', color='blue', label='English')
     plt.xlabel('Midterm scores')
     plt.ylabel('Final scores')
     plt.xlim([0, 125])
@@ -32,8 +32,8 @@ if __name__ == '__main__':
     plt.grid()
     # TODO) Plot total scores as a histogram
     plt.subplot(2, 1, 2)
-    plt.hist(total_en, bins=numpy.arange(0,101,5), color='blue', alpha=0.5, label='English')
     plt.hist(total_kr, bins=numpy.arange(0,101,5), color='red', alpha=0.5, label='Korean')
+    plt.hist(total_en, bins=numpy.arange(0,101,5), color='blue', alpha=0.5, label='English')
     plt.xlabel('Total scores')
     plt.ylabel('The number of students')
     plt.yticks(range(0, 9, 1))
